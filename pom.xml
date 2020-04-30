@@ -6,6 +6,7 @@
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
   <version>2.2.0.BUILD-SNAPSHOT</version>
+    <packaging>war</packaging>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -219,6 +220,8 @@
           </execution>
         </executions>
       </plugin>
+
+
 
       <!-- Spring Boot Actuator displays build-related information if a git.properties
         file is present at the classpath -->
