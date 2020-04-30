@@ -24,10 +24,11 @@ pipeline {
 
         stage ('Deployment Stage') {
 
-                echo 'Hello from Pipeline Demo'
+            steps {
+                  echo 'Hello from Pipeline Demo'
 
-
+                  }
              }
          }
-   }
-
+    }
+}
