@@ -25,8 +25,8 @@ pipeline {
         stage ('Deployment Stage') {
 
             steps {
-                  echo 'Hello from Pipeline Demo'
-
+                  withMaven(maven : 'Maven3.6.3') {
+                        bat 'mvn deploy'
                   }
              }
          }
